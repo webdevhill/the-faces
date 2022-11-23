@@ -18,3 +18,7 @@
   z-index: -1;
   /* color: "#DBC58A" */
 }
+
+.particles-bg-canvas-self {
+  height: 118vh !important;
+}
