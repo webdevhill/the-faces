@@ -1,0 +1,13 @@
+.Tilt {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFE4C5, #976935); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/* background: linear-gradient(89deg, rgba(82,188,191,1) 0%, rgba(38,0,255,1) */
+
+/* #FFE4C5
+#976935 */
