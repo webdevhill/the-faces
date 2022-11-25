@@ -4,9 +4,7 @@
 
 .center {
   display: flex;
-
   justify-content: center;
-
 }
 
 .particles {
@@ -17,4 +15,8 @@
   left: 0;
   z-index: -1;
   /* color: "#DBC58A" */
+}
+
+.particles-bg-canvas-self {
+  height: 118vh !important;
 }

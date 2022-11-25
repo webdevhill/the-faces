@@ -20,24 +20,29 @@ class App extends Component {
     this.state = {
       input: '',
       imageUrl: '',
-      box: {},
+      box: [],
       route: 'signin',
       isSignedIn: true
     }
   }
 
   calculateFaceLocation = (data) => {
-    const clarifaiFace = data.outputs[0].data.regions[0].region_info.bounding_box;
+    const clarifaiFace = data.outputs[0].data.regions.map ((box) => {
+      return box.region_info.bounding_box
+    })
     const image = document.getElementById('inputimage');
     const width = Number(image.width);
     const height = Number(image.height);
-    return {
-      leftCol: clarifaiFace.left_col * width,
-      topRow: clarifaiFace.top_row * height,
-      rightCol: width - (clarifaiFace.right_col * width),
-      bottomRow: height - (clarifaiFace.bottom_row * height)
-    }
-  }
+      const box = clarifaiFace.map((face) => {
+      return {
+        leftCol: face.left_col * width,
+        topRow: face.top_row * height,
+        rightCol: width - (face.right_col * width),
+        bottomRow: height - (face.bottom_row * height)
+      }
+    });
+  return box
+}
 
 displayBoundingBox = (box) => {
   this.setState({box: box});
@@ -71,7 +76,9 @@ render() {
     const { isSignedIn, imageUrl, box, route } = this.state
     return (
       <div className="App">
-      <ParticlesBg  className='particles' type="tadpole" color="#113648" num={100} bg={true} />
+      {<div>
+        <ParticlesBg  className='particles' type="tadpole" color="#113648" num={100} bg={true} />
+      </div>}
       <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
       { route === 'home'
       ? <div> 

@@ -4,7 +4,7 @@ const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
   return (
     <div>
       <p className="f3 ma1 pa2">
-        {'This app detects the faces with an AI learning model. Please provide an image file or image link ending as a .jpeg'}
+        {'This app detects the faces with an AI learning model. Please provide an image file or image link in a .jpeg format'}
       </p>
       <div className="center pa1">
         <div className="form center pa3 br3 shadow-5">
