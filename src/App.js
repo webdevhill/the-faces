@@ -11,7 +11,7 @@ import ParticlesBg from 'particles-bg';
 import Clarifai from 'clarifai'
 
 const app = new Clarifai.App({
-  apiKey: ''
+  apiKey: 'd311b0154e534ad699c05d002fd898f2'
  });
 
 class App extends Component {
@@ -69,7 +69,7 @@ onRouteChange = (route) => {
   } else if (route === 'home') {
     this.setState({isSignedIn: true})
   }
-  this.setState({route: route});
+  this.setState({route: route}); 
 }
 
 render() {
@@ -82,7 +82,7 @@ render() {
       <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
       { route === 'home'
       ? <div> 
-      <ParticlesBg  className='particles' type="tadpole" color="#113648" num={100} bg={true} />
+      <ParticlesBg  className='particles' type="tadpole" color="#4C2A03" num={100} bg={true} />
         <Logo />
         <Rank />
         <ImageLinkForm 
@@ -106,3 +106,10 @@ render() {
 }
 
 export default App;
+
+//#fffceb
+//#FFE4C5
+//#976935
+//#4C3803
+//#4C2A03
+//#113648
