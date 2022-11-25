@@ -2,7 +2,10 @@ body {
   margin: 0;
   padding: 0;
   color: #fffceb;
-  height: 118vh;
+  /* height: 118vh; */
+  height: 100vh; 
+  /* background-repeat: no-repeat;
+  background-attachment: fixed; */
   font-family: "Courier New", Courier, monospace;
   background: linear-gradient(to top, #3A6073, #16222A);
 }

@@ -17,6 +17,11 @@
   /* color: "#DBC58A" */
 }
 
-.particles-bg-canvas-self {
-  height: 118vh !important;
+.input-image {
+  width: 500px;
+  height: auto;
 }
+
+/* .particles-bg-canvas-self {
+  height: 118vh !important;
+} */
