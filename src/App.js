@@ -11,7 +11,7 @@ import ParticlesBg from 'particles-bg';
 import Clarifai from 'clarifai'
 
 const app = new Clarifai.App({
-  apiKey: 'd311b0154e534ad699c05d002fd898f2'
+  apiKey: ''
  });
 
 class App extends Component {
